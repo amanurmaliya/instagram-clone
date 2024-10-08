@@ -4,12 +4,13 @@ import express from "express";
 import http from "http";
 
 const app = express();
-
+import dotenv from "dotenv";
+dotenv.config({});
 const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost/5173",
+    origin: process.env.URL,
     methods: ["GET", "POST"],
   },
 });

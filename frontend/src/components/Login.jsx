@@ -23,13 +23,13 @@ function Login() {
 
   const signupHandler = async (e) => {
     e.preventDefault();
-    console.log(input);
+    // console.log(input);
 
     try {
       // Yaha ye package database me data save karwane ke kaam me aata hai
       // pahle ye bataya hai ki api me jake data save karna haui aur phir kya data save karna hai
       const res = await axios.post(
-        "http://localhost:3000/api/v1/user/login",
+        "https://instagramclone-5izy.onrender.com/api/v1/user/login",
         input,
         {
           headers: {

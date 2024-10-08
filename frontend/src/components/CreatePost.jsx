@@ -46,7 +46,7 @@ function CreatePost({ open, setOpen }) {
 
       if (imagePreview) formData.append("image", file);
       const post = await axios.post(
-        "http://localhost:3000/api/v1/post/addpost",
+        "https://instagramclone-5izy.onrender.com/api/v1/post/addpost",
         formData,
         {
           headers: {

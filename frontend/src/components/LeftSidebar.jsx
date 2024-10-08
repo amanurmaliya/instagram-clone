@@ -81,9 +81,12 @@ function LeftSidebar() {
   // Logout karne se logout ho jaye
   const LogoutHandler = async (req, res) => {
     try {
-      const res = await axios.get("http://localhost:3000/api/v1/user/logout", {
-        withCredentials: true,
-      });
+      const res = await axios.get(
+        "https://instagramclone-5izy.onrender.com/api/v1/user/logout",
+        {
+          withCredentials: true,
+        }
+      );
 
       // Agar process sahi hota hai toh mai seedhe jake logout kar dunga
       if (res.data.success) {
