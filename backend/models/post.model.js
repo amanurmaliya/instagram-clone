@@ -28,6 +28,8 @@ const postSchema = new mongoose.Schema({
       ref: "Comment",
     },
   ],
-});
+}, {
+    timestamps: true, // ✅ Adds createdAt and updatedAt fields
+  });
 
 export const Post = mongoose.model("Post", postSchema);
