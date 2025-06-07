@@ -43,7 +43,7 @@ function Post({ post }) {
       const action = liked ? "dislike" : "like";
       // console.log("inside like");
       const res = await axios.get(
-        `https://instagramclone-5izy.onrender.com/api/v1/post/${post?._id}/${action}`,
+        `https://amanoer.onrender.com/api/v1/post/${post?._id}/${action}`,
         { withCredentials: true }
       );
 
@@ -81,7 +81,7 @@ function Post({ post }) {
   const commentHandler = async () => {
     try {
       const res = await axios.post(
-        `https://instagramclone-5izy.onrender.com/api/v1/post/${post?._id}/comment`,
+        `https://amanoer.onrender.com/api/v1/post/${post?._id}/comment`,
         { text },
         {
           headers: {
@@ -110,7 +110,7 @@ function Post({ post }) {
   const deletePostHander = async () => {
     try {
       const res = await axios.delete(
-        `https://instagramclone-5izy.onrender.com/api/v1/post/delete/${post?._id}`,
+        `https://amanoer.onrender.com/api/v1/post/delete/${post?._id}`,
         { withCredentials: true }
       );
       if (res.data.success) {
