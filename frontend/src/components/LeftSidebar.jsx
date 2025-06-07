@@ -44,14 +44,6 @@ function LeftSidebar() {
       text: "Home",
     },
     {
-      icon: <Search />,
-      text: "Search",
-    },
-    {
-      icon: <TrendingUp />,
-      text: "Explore",
-    },
-    {
       icon: <MessageCircle />,
       text: "Messages",
     },
@@ -82,7 +74,7 @@ function LeftSidebar() {
   const LogoutHandler = async (req, res) => {
     try {
       const res = await axios.get(
-        "https://instagramclone-5izy.onrender.com/api/v1/user/logout",
+        "https://amanoer.onrender.com/api/v1/user/logout",
         {
           withCredentials: true,
         }

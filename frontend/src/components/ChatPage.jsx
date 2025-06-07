@@ -21,7 +21,7 @@ function ChatPage() {
   const sendMessageHandler = async (receiverId) => {
     try {
       const res = await axios.post(
-        `https://instagramclone-5izy.onrender.com/api/v1/message/send/${receiverId}`,
+        `https://amanoer.onrender.com/api/v1/message/send/${receiverId}`,
         { textMessage },
         {
           headers: {

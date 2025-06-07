@@ -130,7 +130,7 @@ function Post({ post }) {
   const bookmarkHandler = async () => {
     try {
       const res = await axios.get(
-        `https://instagramclone-5izy.onrender.com/api/v1/post/${post?._id}/bookmark`,
+        `https://amanoer.onrender.com/api/v1/post/${post?._id}/bookmark`,
         {
           withCredentials: true,
         }

@@ -34,7 +34,7 @@ function CommentDailog({ open, setOpen }) {
   const commentHandler = async () => {
     try {
       const res = await axios.post(
-        `https://instagramclone-5izy.onrender.com/api/v1/post/${selectedPost?._id}/comment`,
+        `https://amanoer.onrender.com/api/v1/post/${selectedPost?._id}/comment`,
         { text },
         {
           headers: {

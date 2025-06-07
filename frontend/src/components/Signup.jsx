@@ -28,7 +28,7 @@ function Signup() {
       // Yaha ye package database me data save karwane ke kaam me aata hai
       // pahle ye bataya hai ki api me jake data save karna haui aur phir kya data save karna hai
       const res = await axios.post(
-        "https://instagramclone-5izy.onrender.com/api/v1/user/register",
+        "https://amanoer.onrender.com/api/v1/user/register",
         input,
         {
           headers: {
